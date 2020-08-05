@@ -76,5 +76,38 @@ for i in range (2 , 100):
        # print(prime)
 print(sum)
 
+练习四程序的控制结构 (第4周)
+实例五
+'''
+BMI ：Body Mass Index 国际上常用的衡量人体肥胖和健康程度重要标准，主要用于统计分析‪‬‪‬‪‬‪‬‪‬‮‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‮‬
+
+定义：BMI = 体重 (kg) /身高2(m2)‪‬‪‬‪‬‪‬‪‬‮‬‪‬‮‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‭‬‫‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‪‬‪‬‪‬‪‬‪‬‪‬‮‬‫‬‭‬‪‬‪‬‪‬‪‬‪‬‮‬‪‬‮‬
+
+获取用户输入的体重和身高值，计算并给出国际和国内的 BMI 分类
+'''
+hight, heavy = eval(input())
+bmi = heavy/(hight**2)
+china=" "
+international=" "
+if bmi < 18.5:
+    china="偏瘦"
+    international="偏瘦"
+elif 18.5 <= bmi < 24:
+    china = "正常"
+    international = "正常"
+elif 24 <= bmi < 25:
+    china = "偏胖"
+    international = "正常"
+elif 25 <= bmi < 28:
+    china = "偏胖"
+    international = "偏胖"
+elif 28 <= bmi < 30:
+    china = "肥胖"
+    international = "偏胖"
+elif 30 <= bmi:
+    china = "肥胖"
+    international = "肥胖"
+print("BMI数值为:{:.2f}".format(bmi))
+print("BMI指标为:国际'{0}',国内'{1}'".format(international,china))
 
 
